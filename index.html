@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rami ALZEBAK Resume</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+    <style>
+        .content-row h4,
+        .content-row h5,
+        .h5,
+        .content-row h6,
+        .h6,
+        .content-row h2,
+        .content-row h3,
+        .content-row h1 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+
+        * {
+            font-family: 'Nunito', sans-serif
+        }
+
+        .section {
+            width: 100%;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        div[class^=col] {}
+
+        :root {
+            --main-color: #B01B1B;
+            --white: #fff;
+            --black: #333;
+            --gray: #9B9B9B;
+        }
+
+        .intro {
+            background: var(--main-color);
+            color: var(--white);
+            padding: 3px;
+            padding-left: 15px;
+        }
+
+        .intro h3,
+        .intro h2 {
+            margin-bottom: 1px;
+            font-weight: bolder;
+        }
+
+        .intro h4 {
+
+            padding-bottom: 6px;
+            float: left;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+
+        .intro h4.title {
+            border-bottom: solid 1px var(--white);
+            border-radius: 1px;
+        }
+
+        .intro p {
+            clear: both;
+        }
+
+        .section-title {
+            color: var(--main-color);
+            border-bottom: solid var(--main-color) 1px;
+            border-radius: 1px;
+            padding-bottom: 3px;
+            font-weight: bold;
+            font-size: 2.0rem;
+        }
+
+
+
+        .section-title,
+        .sub-title,
+        .name-title,
+        .date,
+        .project-title {}
+
+        .language-section>div {
+            padding-left: 2px;
+        }
+
+        .contact-wrapper {
+            padding: 0;
+        }
+
+        .sub-title {
+            color: var(--main-color);
+            font-weight: bold;
+        }
+
+        .section-title,
+        .sub-title {
+            margin-top: 15px !important;
+        }
+
+        .name-title {
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .project-title {
+            color: var(--main-color);
+            font-weight: bold;
+
+        }
+
+        p.desc {
+            color: var(--black);
+            clear: both;
+            display: block;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tasks {
+            color: var(--gray);
+            clear: both;
+            display: block;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .date {
+            color: var(--main-color);
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .list {
+            color: var(--black);
+            list-style-type: square;
+            box-sizing: content-box;
+            padding: 0;
+            text-align: left;
+
+            padding-left: calc(1em + 10px);
+            list-style: none;
+            font-weight: bold;
+        }
+
+        .work-item,
+        .skills-item {
+            padding-left: 5px;
+        }
+
+        .list li:before {
+            content: "\2022";
+
+            color: var(--main-color);
+            font-weight: bold;
+            /* If you want it to be bold */
+            display: inline-block;
+            /* Needed to add space between the bullet and the text */
+            width: 1em;
+            /* Also needed for space (tweak if needed) */
+            margin-left: -1em;
+            /* Also needed for space (tweak if needed) */
+
+        }
+
+        .work-section {
+            padding-right: 50px;
+        }
+
+        .list .desc {
+            color: var(--gray);
+            font-size: 11px;
+            clear: both;
+            display: block;
+            font-style: italic;
+            margin-left: 3px;
+        }
+
+        img.personal {
+            width: 100%;
+        }
+
+        .img-wrapper.squared {
+
+            position: relative;
+            overflow: hidden;
+            border-radius: 10%;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+
+        .img-wrapper.squared img {
+            position: relative;
+
+        }
+
+        .contact-wrapper .fa,
+        .contact-wrapper .fab {
+            color: var(--main-color);
+            font-size: 1.4rem;
+            margin-right: 5px;
+
+
+        }
+
+        .content-item {
+            margin-top: 1px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-left: 5px;
+        }
+
+        .contact-wrapper {
+            text-align: justify;
+        }
+
+        .intro-row {
+            padding: 20px;
+            padding-bottom: 0;
+            padding-left: 0px;
+        }
+
+        .intro {
+            border-radius: 10px;
+        }
+
+        .sidebar {
+            padding: 20px;
+        }
+
+        .language-circle-container {
+            width: 100%;
+            clear: both;
+        }
+
+        .language-circle {
+            width: 15px;
+            height: 15px;
+            margin-right: 4px;
+            border-radius: 50%;
+            border: solid var(--main-color) 2px;
+            position: relative;
+            box-sizing: border-box;
+            padding: 1px;
+            display: inline-block;
+        }
+
+        .main-color {
+            color: var(--main-color);
+        }
+
+        .language-circle div {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+        }
+
+        .language-circle.active div {
+            background: #b01b1bd9;
+        }
+
+        .tag {
+            background: var(--main-color);
+            border-radius: 3px;
+            display: inline-block;
+            padding: 7px;
+            margin-top: 5px;
+            color: var(--white);
+            font-size: 1.4rem;
+        }
+
+        .list-item-header {
+            color: var(--main-color);
+        }
+
+        @media print {
+
+            * {
+                font-family: Helvetica, sans-serif;
+            }
+
+            .education-section {
+                page-break-inside: avoid;
+                padding-top: 20px;
+            }
+
+            .experience-section {
+                page-break-inside: avoid;
+                padding-top: 10px;
+
+            }
+
+            .section {
+                page-break-inside: avoid;
+
+
+            }
+
+            .section-title,
+            .sub-title {
+                margin-top: 5px !important;
+            }
+
+
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+
+
+        }
+
+        .sidebar {
+            height: 100%;
+        }
+
+
+
+
+        .codeforces-icon {
+
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg class='icon' height='512' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E%0A.st0%7B fill:%23B01B1B;%0A%7D%0A%3C/style%3E%3Cpath class='st0' d='M192 320a64 64 0 0 1 64 64v448a64 64 0 0 1-64 64H64a64 64 0 0 1-64-64V384a64 64 0 0 1 64-64h128z m384-192a64 64 0 0 1 64 64v640a64 64 0 0 1-64 64H448a64 64 0 0 1-64-64V192a64 64 0 0 1 64-64h128z m384 320a64 64 0 0 1 64 64v320a64 64 0 0 1-64 64h-128a64 64 0 0 1-64-64V512a64 64 0 0 1 64-64h128z' /%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-right: 2px;
+        }
+
+        .icpc-icon {
+
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImxvZ28iIGlua3NjYXBlOnZlcnNpb249IjAuOTIuMyAoMjQwNTU0NiwgMjAxOC0wMy0xMSkiIHNvZGlwb2RpOmRvY25hbWU9ImxvZ29faWNwYy5zdmciIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDkzLjMgMTI2LjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDkzLjMgMTI2LjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojQjAxQjFCO308L3N0eWxlPjxzb2RpcG9kaTpuYW1lZHZpZXcgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiBib3JkZXJvcGFjaXR5PSIxIiBmaXQtbWFyZ2luLWJvdHRvbT0iMCIgZml0LW1hcmdpbi1sZWZ0PSIwIiBmaXQtbWFyZ2luLXJpZ2h0PSIwIiBmaXQtbWFyZ2luLXRvcD0iMCIgZ3JpZHRvbGVyYW5jZT0iMTAiIGd1aWRldG9sZXJhbmNlPSIxMCIgaWQ9Im5hbWVkdmlldzIxNiIgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibG9nbyIgaW5rc2NhcGU6Y3g9IjExNC45OTMwMSIgaW5rc2NhcGU6Y3k9IjEzNi40NDExOSIgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwNDYiIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkxNiIgaW5rc2NhcGU6d2luZG93LXg9IjAiIGlua3NjYXBlOndpbmRvdy15PSIzMiIgaW5rc2NhcGU6em9vbT0iMS40OTM2NzA5IiBvYmplY3R0b2xlcmFuY2U9IjEwIiBwYWdlY29sb3I9IiNmZmZmZmYiIHNob3dncmlkPSJmYWxzZSI+PC9zb2RpcG9kaTpuYW1lZHZpZXc+PGcgaWQ9ImcxMjIiPjxnIGlkPSJnMTIwIj48cGF0aCBpZD0icGF0aDExOCIgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgY2xhc3M9InN0MCIgZD0iTTQ1LjMsNjAuNGwxMi44LDMuNmwtMTEuNCw0LjdsOSwyLjVsLTYuMyw1LjFWOTBoNS4zbDEuOC0xMi45bDAuMi0wLjFjMTMuNy01LjcsMTQuNi0xOC44LDE0LjctMjEuNHYtMC41SDUwLjZsLTAuNCwwLjVMNDUuMyw2MC40eiIvPjwvZz48L2c+PGcgaWQ9ImcxMjgiPjxnIGlkPSJnMTI2Ij48cGF0aCBpZD0icGF0aDEyNCIgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgY2xhc3M9InN0MCIgZD0iTTM3LjgsNjkuMmwxMS4xLTQuNmwtOS42LTIuOWw2LjctNi4ybDAuNC0wLjVIMjQuNHYwLjVDMjQuNiw1OC40LDI1LDcyLDM4LjcsNzcuMWwwLjMsMC4xbDAsMC4zTDQwLjYsOTBoNS44Vjc0LjlsMy4xLTIuNUwzNy44LDY5LjJ6Ii8+PC9nPjwvZz48ZyBpZD0iZzEzNCI+PGcgaWQ9ImcxMzIiPjxyZWN0IGlkPSJyZWN0MTMwIiB4PSI0Ni40IiB5PSIzLjUiIGNsYXNzPSJzdDAiIHdpZHRoPSIyLjgiIGhlaWdodD0iMjQuMiIvPjwvZz48L2c+PGcgaWQ9ImcxNDAiPjxnIGlkPSJnMTM4Ij48cmVjdCBpZD0icmVjdDEzNiIgeD0iMTEiIHk9IjI4LjUiIHRyYW5zZm9ybT0ibWF0cml4KDAuNDQ3MiAtMC44OTQ0IDAuODk0NCAwLjQ0NzIgLTI4LjUzMjMgMzIuOTUwOCkiIGNsYXNzPSJzdDAiIHdpZHRoPSIyLjgiIGhlaWdodD0iMjIuMSIvPjwvZz48L2c+PGcgaWQ9ImcxNDYiPjxnIGlkPSJnMTQ0Ij48cmVjdCBpZD0icmVjdDE0MiIgeD0iMTguNSIgeT0iMTYuNCIgdHJhbnNmb3JtPSJtYXRyaXgoMC42NjQxIC0wLjc0NzYgMC43NDc2IDAuNjY0MSAtMTQuNDM5IDI0LjQwMjgpIiBjbGFzcz0ic3QwIiB3aWR0aD0iMi44IiBoZWlnaHQ9IjIzLjciLz48L2c+PC9nPjxnIGlkPSJnMTUyIj48ZyBpZD0iZzE1MCI+PHBvbHlnb24gaWQ9InBvbHlnb24xNDgiIGNsYXNzPSJzdDAiIHBvaW50cz0iMzguNCwyOS42IDI5LjMsOC4zIDI5LjEsNy45IDI2LjUsOSAzNS43LDMwLjIgMzUuOSwzMC43ICIvPjwvZz48L2c+PGcgaWQ9ImcxNTgiPjxnIGlkPSJnMTU2Ij48cmVjdCBpZD0icmVjdDE1NCIgeD0iNzIuMiIgeT0iMzguMSIgdHJhbnNmb3JtPSJtYXRyaXgoMC44OTQ0IC0wLjQ0NzIgMC40NDcyIDAuODk0NCAtOC44OTU4IDQxLjQyMTkpIiBjbGFzcz0ic3QwIiB3aWR0aD0iMjIuMSIgaGVpZ2h0PSIyLjgiLz48L2c+PC9nPjxnIGlkPSJnMTY0Ij48ZyBpZD0iZzE2MiI+PHJlY3QgaWQ9InJlY3QxNjAiIHg9IjYzLjkiIHk9IjI2LjkiIHRyYW5zZm9ybT0ibWF0cml4KDAuNzQ3NiAtMC42NjQyIDAuNjY0MiAwLjc0NzYgMC4zMzYxIDU3LjQzOTkpIiBjbGFzcz0ic3QwIiB3aWR0aD0iMjMuNyIgaGVpZ2h0PSIyLjgiLz48L2c+PC9nPjxnIGlkPSJnMTcwIj48ZyBpZD0iZzE2OCI+PHJlY3QgaWQ9InJlY3QxNjYiIHg9IjUxLjQiIHk9IjE3LjkiIHRyYW5zZm9ybT0ibWF0cml4KDAuMzk3MSAtMC45MTc4IDAuOTE3OCAwLjM5NzEgMjAuNDAxIDY5LjYzMzQpIiBjbGFzcz0ic3QwIiB3aWR0aD0iMjMuNiIgaGVpZ2h0PSIyLjgiLz48L2c+PC9nPjxnIGlkPSJnMTc2Ij48ZyBpZD0iZzE3NCI+PHBhdGggaWQ9InBhdGgxNzIiIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIGNsYXNzPSJzdDAiIGQ9Ik05MS4yLDExMi4ydi00NWMwLTYuNi01LjQtMTItMTEuOS0xMmgtNC4zbDAsMC41Yy0wLjQsOS43LTQuNiwxNS43LTguMSwxOWMtMy40LDMuMi02LjcsNC42LTcuNCw0LjhsLTIsMTMuOUgzNy45bC0xLjctMTMuOGMtMTQuNy01LjYtMTUuMi0yMS4xLTE1LjQtMjQuMWwwLTAuM2wtNC4zLDBjLTYuNiwwLTExLjksNS40LTExLjksMTJ2NDVjMCw2LDQuNSwxMSwxMC4yLDExLjhoNjYuMkM4Ni43LDEyMy4xLDkxLjIsMTE4LjIsOTEuMiwxMTIuMkw5MS4yLDExMi4yeiBNMzguMSw5Ni41aDE5LjR2Mi45SDM4LjFWOTYuNXogTTM4LjEsMTAyaDE5LjR2Mi45SDM4LjFWMTAyeiBNNTEuNSwxMTUuOGgtNy42VjExM2g3LjZWMTE1Ljh6IE01Ny42LDExMC40SDM4LjJ2LTIuOWgxOS40VjExMC40eiIvPjwvZz48L2c+PC9zdmc+);
+            background-size: cover cover;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 2px;
+        }
+
+        .content-item>span {
+            width: 16px;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+
+
+        @media screen and (min-width:992px) {
+            .d-md-none {
+                display: none;
+            }
+
+            .d-md-block {
+                display: block;
+            }
+
+        }
+        .small-intro-section {
+            margin-bottom: 15px;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="row">
+            <div class=" col-md-3 col-xs-12   sidebar">
+
+                <section class="contact-section section">
+
+                    <div class="row">
+                        <div class="img-wrapper squared col-md-8 col-xs-4  col-md-offset-1">
+                            <img class="personal img-responsive " src="personal.jpg" alt="Rami Al-Zebak"
+                                title="Rami Al-Zebak" />
+                        </div>
+                        <div class="contact-tags-wrapper  col-md-12  col-xs-7 col-xs-offset-1 col-md-offset-0  p-0">
+                            <div class="contact-wrapper">
+                                <div class="content-item">
+                                    <span class="fa fa-envelope"></span> r.alzebak@gmail.com
+                                </div>
+                                <div class="content-item">
+                                    <span class="fa fa-mobile-alt"></span> +963993678591
+                                </div>
+                                <div class="content-item">
+                                    <span class="fa fa-map-marker"></span> Damascus,Mazzeh
+                                </div>
+                                <div class="content-item">
+                                    <a target="_blank" href="https://www.linkedin.com/in/rami-al-zebak-7b9652105/">
+                                        <span class="fab fa-linkedin"></span> rami-al-zebak</a>
+                                </div>
+                                <div class="content-item">
+                                    <a target="_blank" href="https://github.com/zkrami/"><span
+                                            class="fab fa-github"></span>
+                                        zkrami</a>
+                                </div>
+
+                                <div class="content-item">
+                                    <span class="fab fa-skype"></span> rm.zk.9
+                                </div>
+                                <div class="content-item">
+
+                                    <a target="_blank" href="https://codeforces.com/profile/RamiZk">
+                                        <span class="codeforces-icon">
+                                        </span>
+                                        RamiZk
+                                    </a>
+                                </div>
+
+                                <div class="content-item">
+                                    <a target="_blank" href="https://icpc.baylor.edu/ICPCID/5ZT7EBDYZOHQ">
+                                        <span class="icpc-icon"></span>
+                                        ICPC ID
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="tags-wrapper ">
+                                <h3 class="section-title">TAGS</h3>
+                                <div class="tag-wrapper">
+                                    <div class="tag">Competitive Programmer</div>
+                                    <div class="tag">Software Engineer</div>
+                                    <div class="tag">AI</div>
+                                    <div class="tag">Web Developer</div>
+                                    <div class="tag">Full Stack</div>
+                                    <div class="tag">Research & Strategy</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </section>
+
+                <section class="intro-section section d-md-none small-intro-section">
+                        <div class="row intro-row ">
+    
+                            <div class="intro">
+    
+                                <h2>Rami Al-Zebak</h2>
+                                <h4 class="title">Software Engineer</h4>
+                                <p>
+                                    Software engineer with 4 years of experience in developing robust code for a variety of
+                                    businesses. <br />
+                                    Beginner data scientist who is enthusiastic about AI.<br />
+                                    Competitive programmer with great skills in data structures, algorithms, and
+                                    problem-solving. <br />
+    
+                                    Proficient in a variety of platforms, technologies, and languages.<br />
+                                    Skilled at team collaboration while working independently in remote environments.
+                                </p>
+                            </div>
+    
+                        </div>
+                    </section>
+
+                <section class="section education-section">
+
+                    <h3 class="section-title">EDUCATION</h3>
+                    <section class="education-item">
+                        <h4 class="sub-title">Engineering of Information Technology</h4>
+                        <h6 class="date">09/2014 - Present</h6>
+                        <h5 class="name-title"> Damascus University , Damascus(Syria)</h5>
+                        <h5 class="name-title"> Expected Graduation: September 2020</h5>
+                        <h4 class="name-title"> Ranked <span class="main-color">third</span> in class of 500 students
+                            with average of <span class="main-color">88%</span> </h4>
+
+
+                    </section>
+                </section>
+                <section class="language-section section ">
+                    <h3 class="section-title">LANGUAGES</h3>
+                    <div class="language-item">
+                        <label class="language-label">English</label>
+                        <div class="language-circle-container">
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle ">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <label class="language-label">Arabic</label>
+                        <div class="language-circle-container">
+
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                            <div class="language-circle active">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class=" col-xs-12 col-md-9 content-row">
+
+                <div class="row intro-row d-md-block d-none">
+
+                    <div class="intro">
+
+                        <h2>Rami Al-Zebak</h2>
+                        <h4 class="title">Software Engineer</h4>
+                        <p>
+                            Software engineer with 4 years of experience in developing robust code for a variety of
+                            businesses. <br />
+                            Beginner data scientist who is enthusiastic about AI.<br />
+                            Competitive programmer with great skills in data structures, algorithms, and
+                            problem-solving. <br />
+
+                            Proficient in a variety of platforms, technologies, and languages.<br />
+                            Skilled at team collaboration while working independently in remote environments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row content">
+                    <section class="section work-section">
+
+                        <h3 class="section-title">RECENT WORK EXPERIENCE</h3>
+                        <section class="work-item">
+                            <h4 class="sub-title">Full Stack Developer</h4>
+                            <h4 class="name-title">BrainSocket - Damascus Syria </h4>
+                            <h6 class="date">10/2018 - present</h6>
+
+                            <h4 class="project-title">Dukaneh (My Shop)</h4>
+                            <p class="desc"> Stock management system to automate and facilitate shops processes all
+                                over the city of Damascus, coupled with the ability to analyze data, generate reports,
+                                forecast future demand, and more.</p>
+                            <h5 class="tasks">Tasks and achievements</h5>
+                            <ul class="list">
+                                <li> Discussed, analyzed and strategized product design with product managers, UX team
+                                    and business managers</li>
+                                <li> Providing technical advice and assists in solving programming problems</li>
+                                <li> Monitoring and improve performance metrics</li>
+                                <li> Automated deployment and, continuous delivery implementation</li>
+                                <li> Coding, compiling, unit testing, integration, packaging and deployment of developed
+                                    software</li>
+                            </ul>
+
+
+                        </section>
+
+                        <section class="work-item">
+                            <h4 class="sub-title">Full Stack Developer</h4>
+                            <h4 class="name-title">CodeExperts - Damascus Syria </h4>
+                            <h6 class="date">02/2018 - 10/2018</h6>
+
+                            <h3 class="project-title">BlobLine</h3>
+                            <p class="desc"> BlobLine provides adaptive streaming infrastructure for video publishers
+                                and integrators,
+                                combined with advertising engine. </p>
+                            <h5 class="tasks">Tasks and achievements</h5>
+                            <ul class="list">
+
+                                <li> Improved the queue load balance algorithm performance by 30% and reduced its cost
+                                    by 20%</li>
+                                <li> Created a RESTful API endpoints using Laravel framework </li>
+                                <li> Resolved 50+ critical bugs in the product to improve performance</li>
+                                <li> Worked on 3rd-party API integrations with Amazon, and Wowza developed with TDD
+                                    principles</li>
+
+                            </ul>
+                        </section>
+                        <section class="work-item">
+
+                            <h4 class="sub-title"> Full Stack Developer </h4>
+                            <h4 class="name-title"> Blueup - Damascus Syria</h4>
+                            <h6 class="date">03/2017 - 01/2018</h6>
+                            <h5 class="tasks">Tasks and achievements</h5>
+                            <ul class="list">
+                                <li> Developing web-based solutions</li>
+                                <li> Creating websites that are user-friendly, effective and appealing</li>
+                                <li> Collaborating with graphic designers to make better websites </li>
+                                <li> Making high quality web animation </li>
+                                <li> Deploying websites onto different environment</li>
+                                <li> Configuring emails for the agency</li>
+                            </ul>
+                            <h4 class="sub-title">Products contributed in</h4>
+                            <ul class="websites list">
+                                <li> <a target="_blank" href="http://darajat.org/en/intro">Darajat</a> </li>
+                                <li> <a target="_blank" href="http://blackduck-ad.com/">Blackduck</a> </li>
+
+                            </ul>
+
+
+
+                        </section>
+
+
+
+                    </section>
+
+                    <section class="section experience-section">
+
+                        <h3 class="section-title">SKILLS AND EXPERTISE</h3>
+                        <section class="skills-item">
+                            <h4 class="sub-title">Areas of Expertise</h4>
+                            <ul class="list">
+                                <li>
+                                    Artificial Intelligence
+                                </li>
+                                <li>
+                                    Software Design Patterns
+                                </li>
+                                <li>
+                                    Agile Scrum Management
+                                </li>
+                                <li>
+                                    Version control system (Git)
+                                </li>
+                                <li>
+                                    Unix based system , Windows , Dos
+                                </li>
+                                <li>
+                                    Networking
+                                </li>
+                                <li>
+                                    Minimal proficiency in windows server
+                                </li>
+                                <li>
+                                    Great understanding of security and hacking
+                                </li>
+                                <li>
+                                    Good experience with Photoshop and Illustrator
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="skills-item">
+                            <h4 class="sub-title">Technical Skills</h4>
+
+                            <ul class="list">
+
+                                <li>
+                                    <span class="list-item-header">Coding Languages: </span> Php, JavaScript, C#, C\C++,
+                                    Python, Java
+                                </li>
+                                <li>
+                                    <span class="list-item-header">Web Frameworks:</span> Laravel, Codeigniter, Yii2,
+                                    ExpressJs, Wordpress, MVC5 (Microsoft MVC)
+                                </li>
+                                <li>
+                                    <span class="list-item-header">Web Technologies: </span> Html5, Css3 (Bootstrap,
+                                    SASS), Javascript ( Jquery, SocketIO, GSAP ), NodeJs, Angular2, Asp.net
+                                </li>
+                                <li>
+                                    <span class="list-item-header">Databases: </span> Mysql, MongoDb, Postgresql,
+                                    SqlServer, Redis
+                                </li>
+                                <li>
+                                    <span class="list-item-header">Artificial Intelligence Tools </span> Matlab,
+                                    TensorFlow, Keras, OpenCv
+                                </li>
+                                <li>
+                                    <span class="list-item-header">Other: </span> Jenkins, Xaml(WPF), Unity3d,
+                                    Networking programming, Video streaming engine (Wowza), FFMpeg
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- <section class="skills-item">
+                            <h4 class="sub-title">Communication Skills</h4>
+                            <ul class="list">
+                                <li>Comfortable speaking in any variety of settings and in front of large groups</li>
+                                <li>Capable of analyzing situations and problem solving</li>
+                                <li>Solid analytical and problem solving skills</li>
+                                <li>Minimal experience in lecturing (I volunteered to give lectures to students at a low
+                                    level and students from previous years)</li>
+                            </ul>
+                        </section> -->
+                        <section class="skills-item highlighted-achievements">
+                            <h4 class="sub-title">Highlighted Achievements</h4>
+                            <ul class="list">
+                                <li>Participated in ICPC 2019 world finals
+                                    <span class="desc">ICPC (The International Collegiate Programming Contest is an
+                                        algorithmic programming contest for college students) </span></li>
+                                <li> Ranked <span class="highlighted-rank">7th</span> in ACPC
+                                    <span class="desc">ACPC (Arabic Collegiate Programming Contest) - 2018</span>
+                                </li>
+                                <li> Ranked <span class="highlighted-rank">4th</span> in SCPC
+                                    <span class="desc">SCPC (Syrian Collegiate Programming Contest) - 2018</span>
+                                </li>
+                                <li> Ranked <span class="highlighted-rank">first</span> in DCPC
+                                    <span class="desc">DCPC (Damascus Collegiate Programming Contest) - 2018</span>
+                                </li>
+                                <li>
+                                    Participated in Wikilogia Hackathon
+                                    <span class="desc"> Wikilogia - 2017 </span>
+                                </li>
+
+                            </ul>
+                        </section>
+
+                    </section>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
