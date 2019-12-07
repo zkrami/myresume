@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <style>
+        .text-left{
+            text-align: left;
+        }
         .content-row h4,
         .content-row h5,
         .h5,
@@ -42,6 +45,10 @@
             --white: #fff;
             --black: #333;
             --gray: #9B9B9B;
+        }
+
+        .primary-color {
+            color: var(--main-color);
         }
 
         .intro {
@@ -150,7 +157,7 @@
             padding: 0;
             text-align: left;
 
-            padding-left: calc(1em + 10px);
+            padding-left: 10px;
             list-style: none;
             font-weight: bold;
         }
@@ -210,7 +217,7 @@
         .contact-wrapper .fa,
         .contact-wrapper .fab {
             color: var(--main-color);
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin-right: 5px;
 
 
@@ -219,7 +226,7 @@
         .content-item {
             margin-top: 1px;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             margin-left: 5px;
         }
 
@@ -238,7 +245,7 @@
         }
 
         .sidebar {
-            padding: 20px;
+            padding-top:20px;
         }
 
         .language-circle-container {
@@ -290,7 +297,8 @@
         @media print {
 
             * {
-                font-family: Helvetica, sans-serif;
+                font-family:  sans-serif;
+
             }
 
             .education-section {
@@ -400,6 +408,10 @@
             display: block;
             clear: both;
         }
+        .content-item{
+            width:100%;
+            display: block;
+        }
     </style>
 </head>
 
@@ -411,11 +423,12 @@
                 <section class="contact-section section">
 
                     <div class="row">
-                        <div class="img-wrapper squared col-md-8 col-xs-4  col-md-offset-1">
+                        <!-- <div class="img-wrapper squared col-md-8 col-xs-4  col-md-offset-1">
                             <!-- <img class="personal img-responsive " src="personal.jpg" alt="Rami Al-Zebak"
-                                title="Rami Al-Zebak" /> -->
-                        </div>
-                        <div class="contact-tags-wrapper  col-md-12  col-xs-7 col-xs-offset-1 col-md-offset-0  p-0">
+                                title="Rami Al-Zebak" /> 
+                        </div> -->
+                        <div
+                            class="contact-tags-wrapper col-xs-12  p-0 text-left">
                             <div class="contact-wrapper">
                                 <div class="content-item">
                                     <span class="fa fa-user"></span> Rami Alzebak
@@ -456,12 +469,7 @@
                                     </a>
                                 </div>
 
-                                <div class="content-item d-none">
-                                    <a target="_blank" href="https://icpc.baylor.edu/ICPCID/5ZT7EBDYZOHQ">
-                                        <span class="icpc-icon"></span>
-                                        ICPC ID
-                                    </a>
-                                </div>
+                                
 
 
                             </div>
@@ -474,41 +482,9 @@
 
                 </section>
 
-                <section class="intro-section section  small-intro-section">
-                    <div class="row intro-row d-md-none">
 
-                        <div class="intro">
 
-                            <h2>Rami Al-Zebak</h2>
-                            <h4 class="title">Software Engineer</h4>
-                            <p>
-                                Software engineer with 4 years of experience in developing robust code for a variety of
-                                businesses. <br />
-                                Beginner data scientist who is enthusiastic about AI.<br />
-                                Competitive programmer with great skills in data structures, algorithms, and
-                                problem-solving. <br />
 
-                                Proficient in a variety of platforms, technologies, and languages.<br />
-                                Skilled at team collaboration while working independently in remote environments.
-                            </p>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- <section class="section education-section ">
-
-                    <h3 class="section-title">EDUCATION</h3>
-                    <section class="education-item">
-                        <h4 class="sub-title">Engineering of Information Technology</h4>
-                        <h6 class="date">09/2014 - Present</h6>
-                        <h5 class="name-title"> Damascus University , Damascus(Syria)</h5>
-                        <h5 class="name-title"> Expected Graduation: September 2020</h5>
-                        <h4 class="name-title"> Ranked <span class="main-color">third</span> in class of 500 students
-                            with average of <span class="main-color">88%</span> </h4>
-
-                    </section>
-                </section> -->
                 <section class="language-section section ">
                     <h3 class="section-title">LANGUAGES</h3>
                     <div class="language-item">
@@ -522,7 +498,8 @@
                 <section class="section ">
                     <h3 class="section-title">PROFILE</h3>
                     <p class="">
-                        <b>Prize winner in the field of competitive programming.<br />
+                        <b>Holder of many competitive programming awards with sharp skills in algorithms and
+                            data-structures.<br />
                             Software engineer with 4 years of experience in developing robust code for a variety of
                             businesses.<br />
                             Proficient in a variety of platforms, technologies, and languages.</b>
@@ -530,64 +507,70 @@
                     </p>
                 </section>
                 <section class="section ">
-                    <h3 class="section-title">Interests and Hobbies </h3>
+                    <h3 class="section-title">PERSONAL QUALITIES</h3>
                     <p class="">
-                        <b>Prize winner in the field of competitive programming.<br />
-                            Software engineer with 4 years of experience in developing robust code for a variety of
-                            businesses.<br />
-                            Proficient in a variety of platforms, technologies, and languages.</b>
+                        <b>Interpersonal skills, Teamwork skills, Leadership skills, Management and organisational
+                            skills, Willingness to learn, Ability to handle pressure and meet deadlines,
+                            Flexibility.</b>
+                    </p>
+                </section>
 
+                <section class=" highlighted-achievements">
+                    <h4 class="section-title">HIGHLIGHTED ACHIEVEMENTS</h4>
+                    <ul class="list">
+                        <li>Participated in ICPC 2019 world finals
+                            <span class="desc">ICPC (The International Collegiate Programming Contest is an
+                                algorithmic programming contest for college students) </span></li>
+                        <li> Ranked <span class="highlighted-rank">7th</span> in ACPC
+                            <span class="desc">ACPC (Arabic Collegiate Programming Contest) - 2018</span>
+                        </li>
+                        <li> Ranked <span class="highlighted-rank">4th</span> in SCPC
+                            <span class="desc">SCPC (Syrian Collegiate Programming Contest) - 2018</span>
+                        </li>
+                        <li> Ranked <span class="highlighted-rank">first</span> in DCPC
+                            <span class="desc">DCPC (Damascus Collegiate Programming Contest) - 2018</span>
+                        </li>
+                        <li>
+                            Participated in Wikilogia Hackathon
+                            <span class="desc"> Wikilogia - 2017 </span>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="section interests-section">
+                    <h4 class="section-title">INTERESTS AND HOBBIES</h4>
+                    <p class="desc">
+                        Technology, Fitness, Travel, Cultures, History, Politics, Languages.
                     </p>
                 </section>
             </div>
             <div class=" col-xs-12 col-md-9 content-row">
-                <!-- 
-                <div class="row intro-row d-none d-md-block">
 
-                    <div class="intro">
-
-                        <h2>Rami Al-Zebak</h2>
-                        <h4 class="title">Software Engineer</h4>
-                        <p>
-                            Software engineer with 4 years of experience in developing robust code for a variety of
-                            businesses. <br />
-                            Beginner data scientist who is enthusiastic about AI.<br />
-                            Competitive programmer with great skills in data structures, algorithms, and
-                            problem-solving. <br />
-
-                            Proficient in a variety of platforms, technologies, and languages.<br />
-                            Skilled at team collaboration while working independently in remote environments.
-                        </p>
-                    </div>
-                </div> -->
 
                 <div class="row content">
                     <section class="section education-section ">
 
-                        <h3 class="section-title">Formation</h3>
+                        <h3 class="section-title">EDUCATION</h3>
                         <section class="education-item">
                             <h4 class="sub-title">Français Langue Etrangère </h4>
                             <h6 class="date">10/2019 - Present</h6>
-                            <h5 class="name-title"> Villetaneuse University , Paris (France)</h5>
+                            <h5 class="name-title"> Paris 13, Paris (France)</h5>
+                            <p class="desc">An intensive French course intended for foreign students to improve their
+                                language.</p>
 
 
                             <h4 class="sub-title">Engineering of Information Technology</h4>
                             <h6 class="date">09/2014 - 08/2019</h6>
                             <h5 class="name-title"> Damascus University , Damascus(Syria)</h5>
-                            <div class="padder"></div>
                             <h5 class="name-title "> Completed 4 years study of 5 years program. </h5>
                             <h5 class="name-title"> Ranked <span class="main-color">third</span> in class of 500
                                 students.</h5>
 
-
-                            <h4 class="sub-title">Covered Subjects: </h4>
                             <p class="desc">
-                                Virtual Reality, Knowloedge Base Systems, Multimedia and Hypermedia Systems, Compilers,
-                                Parallel Programming, Neaural Networks, Economy and Business Administration, Software
-                                Engineering, Operating Systems, Scientific Calculations, Graphics and Computer Aided
-                                Design, Automata and Formal Languages, Algorithms and Data Structures, Informatics
-                                Network, Computer Architecture, Physics, Analaysis, Probabilities and Statistics,
-                                Programming, General Algebra.
+                                <span class="primary-color">Covered Subjects:</span> Virtual Reality, Knowloedge Base
+                                Systems, Parallel Programming, Neaural Networks,
+                                Software Engineering.
                             </p>
 
 
@@ -617,12 +600,7 @@
                                 <li> Discussed, analyzed and strategized product design with product managers, UX team
                                     and business managers</li>
                                 <li> Providing technical advice and assists in solving programming problems</li>
-                                <li> Monitoring and improve performance metrics</li>
-                                <li> Automated deployment and, continuous delivery implementation</li>
-                                <li> Load balancing and high load testing</li>
-                                <li> Coding, compiling, unit testing, integration, automating backups, packaging and
-                                    deployment of developed
-                                    software</li>
+
                             </ul>
 
 
@@ -646,9 +624,7 @@
                                 <li> Improved the queue load balance algorithm performance by 30% and reduced its cost
                                     by 20%</li>
                                 <li> Created a RESTful API endpoints using Laravel framework </li>
-                                <li> Resolved 50+ critical bugs in the product to improve performance</li>
-                                <li> Worked on 3rd-party API integrations with Amazon, and Wowza developed with TDD
-                                    principles</li>
+
 
                             </ul>
                         </section>
@@ -660,23 +636,12 @@
                             <h5 class="tasks">Tasks and achievements</h5>
                             <ul class="list">
                                 <li> Developing web-based solutions</li>
-                                <li> Creating websites that are user-friendly, effective and appealing</li>
                                 <li> Collaborating with graphic designers to make better websites </li>
-                                <li> Making high quality web animation </li>
-                                <li> Deploying websites onto different environment</li>
-                                <li> Configuring emails for the agency</li>
-                            </ul>
-                            <h4 class="sub-title">Products contributed in</h4>
-                            <ul class="websites list">
-                                <li><a target="_blank"
-                                        href="https://play.google.com/store/apps/details?id=com.socket.dekaneh">Dekaneh</a>
-                                </li>
-                                <li><a target="_blank" href="http://almersal.co/">Almersal</a></li>
-                                <!-- <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.almasaood.tailoring">Al Masaood Tailoring</a></li> -->
-                                <li> <a target="_blank" href="http://darajat.org/en/intro">Darajat</a> </li>
-                                <li> <a target="_blank" href="http://blackduck-ad.com/">Blackduck</a> </li>
+
+
 
                             </ul>
+
 
 
 
@@ -685,7 +650,26 @@
 
 
                     </section>
+                    <section class="section university-projects">
 
+                        <h3 class="section-title">HIGHLIGHTED UNIVERSITY PROJECTS</h3>
+                        <section class="work-item">
+                            <h4 class="sub-title">Content based image rertieval system</h4>
+                            <p class="desc">
+                                Neural network based system to generate a sentence describing the content of an
+                                image.It uses a convolutional neural network to extract visual features from the image,
+                                and uses a LSTM recurrent neural network to decode these features into a sentence.
+                            </p>
+                        </section>
+
+                        <section class="work-item">
+                            <h4 class="sub-title">Sloshing simulation of the liquid from the truck tanker</h4>
+                            <p class="desc">
+                                Simulation of the liquid behaviour on the tank used for road transports.
+                                Using SPH graphic simulation techniques to simulate the liquid behaviour.
+                            </p>
+                        </section>
+                    </section>
                     <section class="section experience-section">
 
                         <h3 class="section-title">SKILLS AND EXPERTISE</h3>
@@ -728,8 +712,8 @@
                             <ul class="list">
 
                                 <li>
-                                    <span class="list-item-header">Coding Languages: </span> Php, JavaScript, C#, C\C++,
-                                    Python, Java
+                                    <span class="list-item-header">Coding Languages: </span> Python, Java, JavaScript,
+                                    C#, C\C++, Php
                                 </li>
                                 <li>
                                     <span class="list-item-header">Web Frameworks:</span> Laravel, Codeigniter, Yii2,
@@ -756,37 +740,16 @@
                             </ul>
                         </section>
                         <!-- <section class="skills-item">
-                            <h4 class="sub-title">Communication Skills</h4>
-                            <ul class="list">
-                                <li>Comfortable speaking in any variety of settings and in front of large groups</li>
-                                <li>Capable of analyzing situations and problem solving</li>
-                                <li>Solid analytical and problem solving skills</li>
-                                <li>Minimal experience in lecturing (I volunteered to give lectures to students at a low
-                                    level and students from previous years)</li>
-                            </ul>
-                        </section> -->
-                        <section class="skills-item highlighted-achievements">
-                            <h4 class="sub-title">Highlighted Achievements</h4>
-                            <ul class="list">
-                                <li>Participated in ICPC 2019 world finals
-                                    <span class="desc">ICPC (The International Collegiate Programming Contest is an
-                                        algorithmic programming contest for college students) </span></li>
-                                <li> Ranked <span class="highlighted-rank">7th</span> in ACPC
-                                    <span class="desc">ACPC (Arabic Collegiate Programming Contest) - 2018</span>
-                                </li>
-                                <li> Ranked <span class="highlighted-rank">4th</span> in SCPC
-                                    <span class="desc">SCPC (Syrian Collegiate Programming Contest) - 2018</span>
-                                </li>
-                                <li> Ranked <span class="highlighted-rank">first</span> in DCPC
-                                    <span class="desc">DCPC (Damascus Collegiate Programming Contest) - 2018</span>
-                                </li>
-                                <li>
-                                    Participated in Wikilogia Hackathon
-                                    <span class="desc"> Wikilogia - 2017 </span>
-                                </li>
+                                    <h4 class="sub-title">Communication Skills</h4>
+                                    <ul class="list">
+                                        <li>Comfortable speaking in any variety of settings and in front of large groups</li>
+                                        <li>Capable of analyzing situations and problem solving</li>
+                                        <li>Solid analytical and problem solving skills</li>
+                                        <li>Minimal experience in lecturing (I volunteered to give lectures to students at a low
+                                            level and students from previous years)</li>
+                                    </ul>
+                                </section> -->
 
-                            </ul>
-                        </section>
 
                     </section>
 
