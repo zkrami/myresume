@@ -3,73 +3,7 @@ body {
     font-family: 'Nunito', sans-serif
 }
 
-@media print {
 
-    body {
-        font-family: Helvetica, sans-serif ;
-
-    }
-
-    .education-section {
-        page-break-inside: avoid;
-        /* padding-top: 20px; */
-    }
-
-    .experience-section {
-        page-break-inside: avoid;
-        /* padding-top: 10px; */
-
-    }
-
-    .section {
-        page-break-inside: avoid;
-
-
-    }
-
-    .section-title,
-    .sub-title {
-        /* margin-top: 5px !important;*/
-    }
-
-
-    body {
-        -webkit-print-color-adjust: exact;
-    }
-
-    .col-md-3 {
-        width: 25% !important;
-    }
-
-    .col-md-9 {
-        width: 75% !important;
-    }
-
-    .d-md-none {
-        display: none !important;
-    }
-
-    .d-none {
-        display: block !important;
-    }
-
-
-    html {
-        font-size: 0.33cm !important;
-        overflow: auto;
-    }
-
-    body {
-        width: 21cm;
-        padding: 0;
-        margin: 0;
-
-    }
-
-
-
-
-}
 html{
     font-size:16px;
 }
@@ -459,4 +393,73 @@ img.personal {
 .highlighted-achievements ul {
     padding: 0;
     list-style: none !important;
+}
+
+
+@media print {
+
+    body {
+        font-family: Helvetica, sans-serif ;
+
+    }
+
+    .education-section {
+        page-break-inside: avoid;
+        /* padding-top: 20px; */
+    }
+
+    .experience-section {
+        page-break-inside: avoid;
+        /* padding-top: 10px; */
+
+    }
+
+    .section {
+        page-break-inside: avoid;
+
+
+    }
+
+    .section-title,
+    .sub-title {
+        /* margin-top: 5px !important;*/
+    }
+
+
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .col-md-3 {
+        width: 25% !important;
+    }
+
+    .col-md-9 {
+        width: 75% !important;
+    }
+
+    .d-md-none {
+        display: none !important;
+    }
+
+    .d-none {
+        display: block !important;
+    }
+
+
+    html {
+        font-size: 0.33cm !important;
+        overflow: auto;
+    }
+
+    body {
+        width: 21cm;
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+
+
 }
